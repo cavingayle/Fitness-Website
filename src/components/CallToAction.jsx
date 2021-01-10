@@ -23,7 +23,7 @@ const CTA = styled.div`
     url(${background}) fixed 50% 50% no-repeat;
   background-size: cover;
   background-position: fixed;
-  padding: 10px 0;
+  padding: 100px 0;
 `;
 
 const Container = styled.div`

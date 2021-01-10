@@ -113,7 +113,16 @@ const HeaderContentWrapper = styled.div`
  padding-right: 15px;
   padding-left: 15px;
   h2 {
-    margin-top: .5em;
+color: #232323;
+font-family: "Barlow Condensed",sans-serif;
+font-size: 38px;
+font-weight: 700;
+letter-spacing: .5px;
+line-height: 1.2;
+margin-bottom: .5rem;
+margin-top: 1.5rem;
+text-align: center;
+text-transform: uppercase;
   }
 `;
 const StyledDiv = styled.div`
@@ -156,7 +165,17 @@ const BodyContent = styled.div`
     padding: 1.25rem;
 
     h4{
-        
+color: #232323;
+cursor: pointer;
+font-family: Montserrat,sans-serif;
+font-size: 22px;
+font-weight: 700;
+letter-spacing: .5px;
+line-height: 30px;
+margin-bottom: 0;
+margin-top: 0;
+text-align: left;
+word-wrap: break-word;
     }
     
 `;
