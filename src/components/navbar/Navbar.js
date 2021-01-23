@@ -4,6 +4,7 @@ import { animateScroll as scroll } from "react-scroll";
 import { FaBars } from "react-icons/fa";
 import { IconContext } from "react-icons/lib";
 
+
 import { Link as LinkS } from "react-scroll";
 import { Link as LinkR } from "react-router-dom";
 
@@ -121,7 +122,7 @@ export const NavbarContainer = styled.div`
   height: 80px;
   z-index: 1;
   width: 100%;
-  padding: 0 5em;
+  padding: 0 25px;
   /* max-width: 1100px; */
 `;
 
@@ -129,12 +130,19 @@ export const NavLogo = styled(LinkR)`
   color: #fff;
   justify-self: flex-start;
   cursor: pointer;
-  font-size: 1.5rem;
+  font-size: 2.5rem;
   display: flex;
   align-items: center;
   margin-left: 24px;
   font-weight: bold;
   text-decoration: none;
+
+font-family: "Barlow Condensed",sans-serif;
+font-weight: 700;
+letter-spacing: .5px;
+line-height: 45.6px;
+
+
 `;
 
 export const MobileIcon = styled.div`
@@ -156,7 +164,8 @@ export const NavMenu = styled.ul`
   align-items: center;
   list-style: none;
   text-align: center;
-  margin-right: -22px;
+  /* margin-right: -22px; */
+  padding: 0;
 
   @media screen and (max-width: 768px) {
     display: none;

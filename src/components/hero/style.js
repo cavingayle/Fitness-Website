@@ -1,45 +1,24 @@
-import React from "react";
-import styled from "styled-components";
-import heroBg from "../images/bg-7.jpg";
-import { Button } from "../elements";
+import styled from 'styled-components'
+import heroBg from "../../images/bg-7.jpg";
 
-const Hero = () => {
-  return (
-    <HeroContainer>
-    <HeroContent>
-      <HeroItems>
-        <HeroH1>STEP UP YOUR 
-            <span>FITNESS CHALLENGE</span>
-            <br/>
-            WITH US
-             </HeroH1>
-        <HeroP>Ready in 60 seconds</HeroP>
-        <Button>Place Order</Button>
-      </HeroItems>
-    </HeroContent>
-  </HeroContainer>
-  );
-};
 
-export default Hero;
 
- const HeroContainer = styled.div`
+export const HeroContainer = styled.div`
   background: linear-gradient(to right, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.1)),
     url(${heroBg});
   height: 100vh;
   background-position: center;
   background-size: cover;
-  
 `;
 
- const HeroContent = styled.div`
+export const HeroContent = styled.div`
   max-height: 100%;
   padding: 200px calc((100vw - 1300px) / 2);
 `;
 
- const HeroItems = styled.div`
- margin-left:0;
- width: 80%;
+export const HeroItems = styled.div`
+  margin-left: 0;
+  width: 80%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -55,24 +34,30 @@ export default Hero;
   }
 `;
 
- const HeroH1 = styled.h1`
-  font-size: clamp(2.5rem, 10vw, 5rem);
-  margin-bottom: 1rem;
+export const HeroH1 = styled.h1`
+  font-size: 95px;
+  line-height: 95px;
+  margin-bottom: 3rem;
   font-weight: 700;
-  letter-spacing: .5px;
+  letter-spacing: 0.5px;
   color: white;
 
   span {
-      color: #f5634b;
+    color: #f5634b;
+  }
+
+  @media screen and  (max-width: 480px) {
+    font-size: 40px;
+    line-height: 48px;
   }
 `;
 
- const HeroP = styled.p`
+export const HeroP = styled.p`
   font-size: clamp(2rem, 2.5vw, 3rem);
   margin-bottom: 2rem;
 `;
 
- const HeroBtn = styled.button`
+export const HeroBtn = styled.button`
   font-size: 1.4rem;
   padding: 1rem 4rem;
   border: none;
@@ -88,4 +73,17 @@ export default Hero;
   }
 `;
 
+export const StyledBox = styled.span`
+  color: #fff;
+  letter-spacing: 5px;
+  border: 2px solid #fff;
+  padding: 3px 15px 5px 15px;
+  opacity: 0.8;
+  font-size: 16px;
+  font-weight: 400;
+  margin-bottom: 1.5rem;
+  display: inline-block;
+  line-height: 1.2;
+  font-family: "Barlow Condensed", sans-serif;
 
+`;
