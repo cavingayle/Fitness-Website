@@ -1,11 +1,12 @@
 import styled from 'styled-components'
 import { FaQuoteLeft } from "react-icons/fa";
+import imgBg from "../../images/bg-cta.jpg"
 
 
 export const MainSection = styled.div`
   padding: 100px 0;
   background: linear-gradient(to right, rgba(0, 0, 0, 1.1), rgba(0, 0, 0, 0.7)),
-    url("https://demo.themefisher.com/gymfit/images/bg/bg-cta.jpg") no-repeat no-repeat;
+    url(${imgBg}) no-repeat no-repeat;
   background-size: cover;
   right: 5;
 `;

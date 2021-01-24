@@ -8,6 +8,7 @@ import CallToAction from '../components/callToAction/CallToAction'
 import Services from '../components/services/Services'
 import Testimonial from '../components/testimonial/Testimonial'
 import PopularCourses from '../components/popularCourses/PopularCourses'
+import {course} from '../components/popularCourses/data'
 import Footer from '../components/footer/Footer'
 
 const Home = () => {
@@ -28,7 +29,7 @@ const Home = () => {
         <CallToAction />
         <Services />
         <Testimonial />
-        <PopularCourses />
+        <PopularCourses courses={course} />
         <Footer />
         </>
     )

@@ -1,5 +1,6 @@
 import React from "react";
 import { Button } from "../../elements";
+
 import {
   MainContainer,
   Container,
@@ -13,9 +14,9 @@ import {
   BodyWrapper,
   Footer,
   FooterContainer,
-  FooterWrapper
-} from './style'
-const PopularCourses = () => {
+  FooterWrapper,
+} from "./style";
+const PopularCourses = ({ courses = [] }) => {
   return (
     <MainContainer>
       <Container>
@@ -31,54 +32,17 @@ const PopularCourses = () => {
           </HeaderContainer>
         </Header>
         <Body>
-          <BodyContainer>
-            <BodyWrapper>
-              <img
-                src="https://demo.themefisher.com/gymfit/images/gallery/course-1.jpg"
-                alt=""
-              />
-              <BodyContent>
-                <h4>Build Body</h4>
-                <p>Mentor: Jimmy Carter</p>
-              </BodyContent>
-            </BodyWrapper>
-          </BodyContainer>
-          <BodyContainer>
-            <BodyWrapper>
-              <img
-                src="https://demo.themefisher.com/gymfit/images/gallery/course-1.jpg"
-                alt=""
-              />
-              <BodyContent>
-                <h4>Build Body</h4>
-                <p>Mentor: Jimmy Carter</p>
-              </BodyContent>
-            </BodyWrapper>
-          </BodyContainer>
-          <BodyContainer>
-            <BodyWrapper>
-              <img
-                src="https://demo.themefisher.com/gymfit/images/gallery/course-1.jpg"
-                alt=""
-              />
-              <BodyContent>
-                <h4>Build Body</h4>
-                <p>Mentor: Jimmy Carter</p>
-              </BodyContent>
-            </BodyWrapper>
-          </BodyContainer>
-          <BodyContainer>
-            <BodyWrapper>
-              <img
-                src="https://demo.themefisher.com/gymfit/images/gallery/course-1.jpg"
-                alt=""
-              />
-              <BodyContent>
-                <h4>Build Body</h4>
-                <p>Mentor: Jimmy Carter</p>
-              </BodyContent>
-            </BodyWrapper>
-          </BodyContainer>
+          {courses.map((course) => (
+            <BodyContainer>
+              <BodyWrapper>
+                <img src={course.image} alt="" />
+                <BodyContent>
+                  <h4>{course.title}</h4>
+                  <p>{course.mentor}</p>
+                </BodyContent>
+              </BodyWrapper>
+            </BodyContainer>
+          ))}
         </Body>
         <Footer>
           <FooterContainer>
@@ -93,4 +57,3 @@ const PopularCourses = () => {
 };
 
 export default PopularCourses;
-

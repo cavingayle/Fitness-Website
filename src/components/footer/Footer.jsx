@@ -18,7 +18,7 @@ const Footer = () => {
       <Container>
         <ContentWrapper>
           <FooterColumn1>
-            <h2>GYMFIT</h2>
+            <h2>LangFit</h2>
             <p>
               Lorem ipsum dolor sit amet, consectetur adipisicing elit.
               Voluptatibus illo ad quo sunt maiores, sint nostrum omnis eaque
@@ -31,11 +31,11 @@ const Footer = () => {
               <FooterColumnTitle>RECENTS POSTS</FooterColumnTitle>
               <LinkContainer>
                 <p>Claritas est etiam processus dynamicus</p>
-                <p>30 february 2019</p>
+                <p>30 february 2021</p>
               </LinkContainer>
               <LinkContainer>
                 <p>Claritas est etiam processus dynamicus</p>
-                <p>30 february 2019</p>
+                <p>30 february 2021</p>
               </LinkContainer>
             </FooterContentWrapper>
           </FooterColumn2>

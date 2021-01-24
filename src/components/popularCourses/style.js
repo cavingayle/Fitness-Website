@@ -18,6 +18,7 @@ export const Header = styled.div`
   flex-wrap: wrap;
   margin-right: -15px;
   margin-left: -15px;
+  margin-bottom: 3.5rem;
 `;
 export const HeaderContainer = styled.div`
   padding-right: 15px;
@@ -25,7 +26,6 @@ export const HeaderContainer = styled.div`
   text-align: center;
   /* width: 100%; */
   margin: 0 auto;
-  margin-bottom: 25px;
 `;
 
 export const HeaderContentWrapper = styled.div`
@@ -61,6 +61,7 @@ export const BodyContainer = styled.div`
   width: 100%;
   padding-right: 15px;
   padding-left: 15px;
+  padding: 0 15px 30px 15px;
   @media (min-width: 768px) {
     flex: 0 0 50%;
     max-width: 50%;

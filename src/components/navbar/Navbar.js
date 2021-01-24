@@ -100,7 +100,7 @@ const Navbar = ({ toggle }) => {
 
 export default Navbar;
 export const Nav = styled.nav`
-  background: ${({ scrollNav }) => (scrollNav ? "#000" : "transparent")};
+  background: ${({ scrollNav }) => (scrollNav ? "#181a23" : "transparent")};
   height: 80px;
   margin-top: -80px;
   display: flex;
